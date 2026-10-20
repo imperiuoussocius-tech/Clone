@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="reader_mode_names">
+        <item>Left to right</item>
+        <item>Right to left</item>
+        <item>Vertical (webtoon)</item>
+    </string-array>
+    <string-array name="reader_mode_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="column_names">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="column_values">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="download_concurrency_names">
+        <item>1 chapter at a time</item>
+        <item>2 chapters at a time</item>
+        <item>3 chapters at a time</item>
+        <item>4 chapters at a time</item>
+        <item>5 chapters at a time</item>
+    </string-array>
+    <string-array name="download_concurrency_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="app_lock_timeout_names">
+        <item>Immediately</item>
+        <item>After 1 minute</item>
+        <item>After 5 minutes</item>
+        <item>After 15 minutes</item>
+    </string-array>
+    <string-array name="app_lock_timeout_values">
+        <item>0</item>
+        <item>60000</item>
+        <item>300000</item>
+        <item>900000</item>
+    </string-array>
+    <string-array name="cover_refresh_interval_names">
+        <item>Every time the app opens</item>
+        <item>Every 30 minutes</item>
+        <item>Every hour</item>
+        <item>Every 6 hours</item>
+        <item>Every 12 hours</item>
+        <item>Every 24 hours</item>
+        <item>Every 7 days</item>
+    </string-array>
+    <string-array name="cover_refresh_interval_values">
+        <item>0</item>
+        <item>30</item>
+        <item>60</item>
+        <item>360</item>
+        <item>720</item>
+        <item>1440</item>
+        <item>10080</item>
+    </string-array>
+    <string-array name="app_update_interval_names">
+        <item>Every time the app starts</item>
+        <item>Every 30 minutes</item>
+        <item>Every hour</item>
+        <item>Every 6 hours</item>
+        <item>Every 12 hours</item>
+        <item>Every 24 hours</item>
+        <item>Every 7 days</item>
+    </string-array>
+    <string-array name="app_update_interval_values">
+        <item>0</item>
+        <item>30</item>
+        <item>60</item>
+        <item>360</item>
+        <item>720</item>
+        <item>1440</item>
+        <item>10080</item>
+    </string-array>
+    <string-array name="library_update_interval_names">
+        <item>Every time the app starts</item>
+        <item>Every 30 minutes</item>
+        <item>Every hour</item>
+        <item>Every 12 hours</item>
+        <item>Every 24 hours</item>
+        <item>Every 7 days</item>
+    </string-array>
+    <string-array name="library_update_interval_values">
+        <item>0</item>
+        <item>30</item>
+        <item>60</item>
+        <item>720</item>
+        <item>1440</item>
+        <item>10080</item>
+    </string-array>
+</resources>

@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^git -C clone-main status --short --branch && git -C clone-main remote -v && find clone-main -maxdepth 4 -type d \\| sort \\| sed -n '1,100p'$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}

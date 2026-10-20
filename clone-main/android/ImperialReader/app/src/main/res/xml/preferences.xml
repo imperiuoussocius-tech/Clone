@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="Reader" app:iconSpaceReserved="false">
+        <ListPreference
+            android:key="reader_mode"
+            android:title="Default reading mode"
+            android:entries="@array/reader_mode_names"
+            android:entryValues="@array/reader_mode_values"
+            android:defaultValue="1"
+            app:useSimpleSummaryProvider="true"
+            app:iconSpaceReserved="false"/>
+        <SwitchPreferenceCompat
+            android:key="keep_screen_on"
+            android:title="Keep screen on"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false"/>
+        <SwitchPreferenceCompat
+            android:key="fullscreen"
+            android:title="Fullscreen"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false"/>
+        <SwitchPreferenceCompat
+            android:key="tap_navigation"
+            android:title="Tap screen edges to turn pages"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false"/>
+        <SwitchPreferenceCompat
+            android:key="volume_keys"
+            android:title="Volume keys turn pages"
+            android:defaultValue="false"
+            app:iconSpaceReserved="false"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Library" app:iconSpaceReserved="false">
+        <ListPreference
+            android:key="library_columns"
+            android:title="Grid columns"
+            android:entries="@array/column_names"
+            android:entryValues="@array/column_values"
+            android:defaultValue="3"
+            app:useSimpleSummaryProvider="true"
+            app:iconSpaceReserved="false"/>
+        <SwitchPreferenceCompat
+            android:key="badge_unread"
+            android:title="Show unread badge"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false"/>
+        <SwitchPreferenceCompat
+            android:key="badge_download"
+            android:title="Show downloaded / local badge"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false"/>
+        <SwitchPreferenceCompat
+            android:key="refresh_on_start"
+            android:title="Automatic library updates"
+            android:summary="Automatically checks for new chapters at the selected frequency"
+            android:defaultValue="false"
+            app:iconSpaceReserved="false"/>
+        <ListPreference
+            android:key="library_update_frequency"
+            android:title="Library update frequency"
+            android:entries="@array/library_update_interval_names"
+            android:entryValues="@array/library_update_interval_values"
+            android:defaultValue="0"
+            app:useSimpleSummaryProvider="true"
+            app:iconSpaceReserved="false"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Downloads" app:iconSpaceReserved="false">
+        <ListPreference
+            android:key="download_concurrency"
+            android:title="Concurrent chapter downloads"
+            android:entries="@array/download_concurrency_names"
+            android:entryValues="@array/download_concurrency_values"
+            android:defaultValue="1"
+            app:useSimpleSummaryProvider="true"
+            app:iconSpaceReserved="false"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="App updates" app:iconSpaceReserved="false">
+        <SwitchPreferenceCompat
+            android:key="automatic_app_updates"
+            android:title="Enable automatic updates"
+            android:summary="Checks the V8 GitHub release and notifies you when an APK update is available"
+            android:defaultValue="false"
+            app:iconSpaceReserved="false"/>
+        <ListPreference
+            android:key="automatic_app_update_frequency"
+            android:title="Update check frequency"
+            android:entries="@array/app_update_interval_names"
+            android:entryValues="@array/app_update_interval_values"
+            android:defaultValue="0"
+            app:useSimpleSummaryProvider="true"
+            app:iconSpaceReserved="false"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Library cover refresh" app:iconSpaceReserved="false">
+        <SwitchPreferenceCompat
+            android:key="automatic_cover_refresh"
+            android:title="Refresh entry covers automatically"
+            android:summary="Fetches the latest covers for library entries when the app opens"
+            android:defaultValue="false"
+            app:iconSpaceReserved="false"/>
+        <ListPreference
+            android:key="automatic_cover_refresh_interval"
+            android:title="Refresh frequency"
+            android:entries="@array/cover_refresh_interval_names"
+            android:entryValues="@array/cover_refresh_interval_values"
+            android:defaultValue="1440"
+            app:useSimpleSummaryProvider="true"
+            app:iconSpaceReserved="false"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Local library" app:iconSpaceReserved="false">
+        <SwitchPreferenceCompat
+            android:key="local_covers"
+            android:title="Extract and refresh covers"
+            android:summary="Uses cover.jpg, the first page of a CBZ/CBR, or the EPUB cover, and updates it when the files change"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Browse" app:iconSpaceReserved="false">
+        <SwitchPreferenceCompat
+            android:key="show_nsfw_ext"
+            android:summary="Off by default. Also enables adult ratings on MangaDex."
+            android:title="Show 18+ sources and catalogs"
+            android:defaultValue="false"
+            app:iconSpaceReserved="false"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Security" app:iconSpaceReserved="false">
+        <SwitchPreferenceCompat
+            android:key="app_lock_enabled"
+            android:title="Lock app"
+            android:summary="Require your device PIN or biometrics when returning to Imperial Reader"
+            android:defaultValue="false"
+            app:iconSpaceReserved="false"/>
+        <ListPreference
+            android:key="app_lock_timeout"
+            android:title="Lock after leaving"
+            android:summary="Choose how long Imperial Reader can stay in the background before locking"
+            android:entries="@array/app_lock_timeout_names"
+            android:entryValues="@array/app_lock_timeout_values"
+            android:defaultValue="0"
+            app:useSimpleSummaryProvider="true"
+            app:iconSpaceReserved="false"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Advanced" app:iconSpaceReserved="false">
+        <Preference
+            android:key="clear_cache"
+            android:title="Clear cache"
+            android:summary="Image, archive and extension caches"
+            app:iconSpaceReserved="false"/>
+        <Preference
+            android:key="clear_cookies"
+            android:title="Clear cookies"
+            android:summary="Removes Cloudflare / login cookies"
+            app:iconSpaceReserved="false"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="About" app:iconSpaceReserved="false">
+        <Preference
+            android:key="version"
+            android:title="Version"
+            app:iconSpaceReserved="false"/>
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,16 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "fwj1FgnMG-67p_Zh1KTnn"
+uri = "file://android/ImperialReader/app/build/outputs/apk/debug/app-debug.apk"
+type = "unspecified"
+title = "Imperial Reader APK — Library categories"
+description = "Updated Library with no visible All tab, Default for uncategorized entries, and category reordering. Build succeeded and APK signature verified."
+logical_id = "fc0433a5-08ad-4437-afe5-8e1084c5e367"
+content_hash = "sha256:b4aa70dbb94ceb9841e2f211fac4c5e68f10099c7da214ac1547778638639d06"
+size = 8177579
+mtime_ms = 1791825025150
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:1b2b3c3a-a6b5-479c-837b-7b8b923e6cd1/fc0433a5-08ad-4437-afe5-8e1084c5e367/c176045a-0d98-47a8-bd7c-bc21ec0ee829"
+storage_version_token = "1791825048147206"
+content_type = "application/octet-stream"
